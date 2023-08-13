@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from './image/logo.png';
 import './NavBar.css'
 import { CgSearch } from 'react-icons/cg';
