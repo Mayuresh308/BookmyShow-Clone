@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
 .navbar {
     height: 65px;
     position: relative;
@@ -16,7 +23,7 @@
 .brand-logo {
     height: 42px;
     margin-left: 132px;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .input {
@@ -31,27 +38,26 @@
 }
 
 .input input {
-    width: 93%;
+    width: 94%;
     height: 30px;
     border-color: transparent;
     outline-color: transparent;
-    font-size: 13.9px;
-    color: #b1aead;
+    font-size: 13px;
+    color: #3b3a3a;
     opacity: 90%;
-    font-weight: 520;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.input ion-icon {
-    font-size: 16px;
-    padding-left: 12px;
-    color: #858585;
+.input .search-icon {
+    color: #808080;
     font-weight: bold;
-    width: 16px;
+    margin-left: 10px;
 }
 
 .right-container {
     display: flex;
     margin-left: auto;
+    margin-right: 132px;
 }
 
 .location {
@@ -59,8 +65,7 @@
     text-decoration: none;
     color: #c7cacb;
     font-size: 14px;
-    margin-right: 18px;
-    top: 12px;
+    padding-top: 8px;
 }
 
 .location:hover {
@@ -68,20 +73,34 @@
     text-decoration: none;
 }
 
-.location ion-icon {
-    font-size: 12px;
+.location-down {
+    font-size: 14px;
     padding-left: 5px;
+    margin-right: 20px;
+    color: white;
+    margin-top: 8px;
 }
 
 .signin {
     position: relative;
-    width: 65px;
+    width: 68px;
     height: 25px;
-    margin-right: 9px;
+    margin-right: 22px;
     border-radius: 4px;
     font-size: 12px;
-    top: 10px;
     color: #fff;
-    background-color: #f84464;
-    border: #f84464;
+    background-color: #f74464;
+    border: #f74464;
+    top: 4px;
+}
+
+.open-menu {
+    position: relative;
+    margin-right: 10px;
+    top: 2px;
+}
+
+.menu {
+    color: #f6f2e5;
+    font-size: 28px;
 }
