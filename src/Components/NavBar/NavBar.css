@@ -13,28 +13,32 @@ body {
 
 .navbar {
     height: 65px;
-    position: relative;
-    background: #333545;
-    z-index: 9;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
 .brand-logo {
-    height: 42px;
-    margin-left: 132px;
-    padding-right: 8px;
+    height: 34px;
 }
 
 .input {
     height: 36px;
-    width: 40%;
+    width: 548px;
     position: relative;
     background-color: white;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
     display: flex;
+    border: 1px solid #ededed;
 }
 
 .input input {
@@ -43,9 +47,10 @@ body {
     border-color: transparent;
     outline-color: transparent;
     font-size: 13px;
-    color: #3b3a3a;
+    color: #999999;
     opacity: 90%;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
 }
 
 .input .search-icon {
@@ -54,53 +59,41 @@ body {
     margin-left: 10px;
 }
 
-.right-container {
+.navbar-right {
     display: flex;
-    margin-left: auto;
-    margin-right: 132px;
+    align-items: center;
+    gap: 20px;
 }
 
 .location {
     position: relative;
     text-decoration: none;
-    color: #c7cacb;
+    color: #333333;
     font-size: 14px;
-    padding-top: 8px;
-}
-
-.location:hover {
-    color: white;
-    text-decoration: none;
 }
 
 .location-down {
-    font-size: 14px;
-    padding-left: 5px;
-    margin-right: 20px;
-    color: white;
-    margin-top: 8px;
+    font-size: 8px;
+    font-weight: 600;
+    color: #333333;
 }
 
 .signin {
     position: relative;
     width: 68px;
     height: 25px;
-    margin-right: 22px;
     border-radius: 4px;
     font-size: 12px;
     color: #fff;
     background-color: #f74464;
     border: #f74464;
-    top: 4px;
 }
 
 .open-menu {
     position: relative;
-    margin-right: 10px;
-    top: 2px;
 }
 
 .menu {
-    color: #f6f2e5;
-    font-size: 28px;
+    color: #333333;
+    font-size: 24px;
 }

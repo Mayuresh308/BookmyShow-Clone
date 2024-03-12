@@ -1,24 +1,28 @@
 import React from 'react'
 import './SubNavBar.css'
+import AppContainer from "../AppContainer/AppContainer";
 
 function SubNavBar() {
     return(
         <div class="subnavbar">
-            <ul class='navitem-left'>
-                <li><a href='#Movies'>Movies</a></li>
-                <li><a href='#Movies'>Stream</a></li>
-                <li><a href='#Movies'>Events</a></li>
-                <li><a href='#Movies'>Plays</a></li>
-                <li><a href='#Movies'>Sports</a></li>
-                <li><a href='#Movies'>Activities</a></li>
-                <li><a href='#Movies'>Buzz</a></li>
-            </ul>
-            <ul class='navitem-right'>
-                <li><a href='#Movies'>ListYourShow</a></li>
-                <li><a href='#Movies'>Corporates</a></li>
-                <li><a href='#Movies'>Offers</a></li>
-                <li><a href='#Movies'>Gift Cards</a></li>
-            </ul>
+            <AppContainer>
+                <div class='subnav-content'>
+                    <div class='navitem-left'>
+                        <a href='#Movies'>Movies</a>
+                        <a href='#Movies'>Stream</a>
+                        <a href='#Movies'>Events</a>
+                        <a href='#Movies'>Plays</a>
+                        <a href='#Movies'>Sports</a>
+                        <a href='#Movies'>Activities</a>
+                    </div>
+                    <div class='navitem-right'>
+                        <a href='#Movies'>ListYourShow</a>
+                        <a href='#Movies'>Corporates</a>
+                        <a href='#Movies'>Offers</a>
+                        <a href='#Movies'>Gift Cards</a>
+                    </div>
+                </div>
+            </AppContainer>
         </div>
     )
 }
