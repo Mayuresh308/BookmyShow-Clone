@@ -5,8 +5,3 @@ It is an clone website of BookMyShow that developed using React JS and also host
 # Build with ⚒️
 
 -> **React JS**
-
-# How to run Locally 🖥️
-
-
-## The End..⚔️
