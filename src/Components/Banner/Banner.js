@@ -8,8 +8,9 @@ import banner1 from "./Image/banner1.avif";
 import banner2 from "./Image/banner2.avif";
 import banner3 from "./Image/banner3.avif";
 import banner4 from "./Image/banner4.avif";
+import banner5 from "./Image/banner5.avif";
 
-const images = [banner1, banner2, banner3, banner4];
+const images = [banner1, banner2, banner3, banner4, banner5];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)
