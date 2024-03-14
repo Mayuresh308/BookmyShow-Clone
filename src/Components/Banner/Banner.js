@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { SlArrowLeft , SlArrowRight } from "react-icons/sl";
+
 import "./Banner.css";
+import banner1 from "./Image/banner1.avif";
+import banner2 from "./Image/banner2.avif";
+import banner3 from "./Image/banner3.avif";
+import banner4 from "./Image/banner4.avif";
+
+const images = [banner1, banner2, banner3, banner4];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -55,33 +63,51 @@ export default () => {
   return (
     <div className="navigation-wrapper">
       <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1">1</div>
-        <div className="keen-slider__slide number-slide2">2</div>
-        <div className="keen-slider__slide number-slide3">3</div>
-        <div className="keen-slider__slide number-slide4">4</div>
-        <div className="keen-slider__slide number-slide5">5</div>
-        <div className="keen-slider__slide number-slide6">6</div>
+        {images.map((image, index) => (
+          <div key={index} className="keen-slider__slide">
+            <img src={image} alt={`Slide ${index + 1}`} />
+          </div>
+        ))}
       </div>
       {loaded && instanceRef.current && (
           <>
-            <Arrow
-              left
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
-              disabled={currentSlide === 0}
-            />
+            <div className="arrow-left">
+              <SlArrowLeft
+                className={`arrow--left ${currentSlide === 0 ? "arrow--disabled" : ""}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  instanceRef.current.prev();
+                }}
+              />
+            </div>
 
-            <Arrow
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
-            />
+            <div className="arrow-right">
+              <SlArrowRight
+                className={`arrow--right ${currentSlide === images.length - 1 ? "arrow--disabled" : ""}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  instanceRef.current.next();
+                }}
+              />
+            </div>
           </>
+        )}
+        {loaded && instanceRef.current && (
+          <div className="dots">
+            {[
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx)
+                  }}
+                  className={"dot" + (currentSlide === idx ? " active" : "")}
+                ></button>
+              )
+            })}
+          </div>
         )}
     </div>
   );
