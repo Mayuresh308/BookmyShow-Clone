@@ -63,7 +63,7 @@ export default () => {
 
   return (
     <div className="navigation-wrapper">
-      <div ref={sliderRef} className="keen-slider">
+      <div ref={sliderRef} className="keen-slider banner">
         {images.map((image, index) => (
           <div key={index} className="keen-slider__slide">
             <img src={image} alt={`Slide ${index + 1}`} />

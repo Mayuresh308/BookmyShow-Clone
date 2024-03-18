@@ -9,9 +9,10 @@ body {
     position: relative;
     height: 318px;
     background-color: #ebebeb;
+    margin: 0 0 32px 0;
   }
 
-  .keen-slider {
+  .banner {
     top: 50%;
     transform: translateY(50%);
     -webkit-transform: translateY(-50%);
