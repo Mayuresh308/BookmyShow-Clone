@@ -1,10 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import "./RecommendedMovieCard.css"
 import AppContainer from "../AppContainer/AppContainer"
 import { FaStar } from "react-icons/fa";
 import { AiFillLike } from "react-icons/ai";
+import { SlArrowLeft , SlArrowRight } from "react-icons/sl";
+
+import poster from "./Image/Poster/poster.avif"
 
 import card1 from "./Image/RecommendedMovie/card1.avif"
 import card2 from "./Image/RecommendedMovie/card2.avif"
@@ -31,7 +34,9 @@ const cards = [
 ]
 
 export default () => {
-  const [sliderRef] = useKeenSlider({
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [loaded, setLoaded] = useState(false)
+  const [sliderRef, instanceRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 400px)": {
         slides: { perView: 5, spacing: 30 },
@@ -41,44 +46,85 @@ export default () => {
       },
     },
     slides: { perView: 5 },
-  })
+    initial: 0,
+    dragStart: null,
+    dragEnd: null,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel)
+    },
+    created() {
+      setLoaded(true)
+    },
+  });
 
   return (
-    <AppContainer>
-        <div className="heading">
-            <h2 className="banner-heading">Recommended Movies</h2>
-            <a className="see-all">See All ›</a>
-        </div>
-        <div ref={sliderRef} className="keen-slider">
-            {cards.map((card, index) => (
-                <div className="keen-slider__slide card-box">
-                    <div key={index} className="card">
-                        <img src={card.image} alt={`Card ${index + 1}`} />
-                        <div class="card-body">
-                            {card.type === "like" ? (
-                                <>
+    <>
+    <div className="recommended-movie">
+        <AppContainer>
+            <div className="heading">
+                <h2 className="banner-heading">Recommended Movies</h2>
+                <a className="see-all">See All ›</a>
+            </div>
+            <div ref={sliderRef} className="keen-slider">
+                {cards.map((card, index) => (
+                    <div className="keen-slider__slide card-box">
+                        <div key={index} className="card">
+                            <img src={card.image} alt={`Card ${index + 1}`} />
+                            <div class="card-body">
+                                {card.type === "like" ? (
+                                    <>
+                                        <div className="like">
+                                            <p className="icon" style={{ color: "#de334a" }}><FaStar /></p>
+                                            <p className="rating">{card.rating}/10</p>
+                                        </div>
+                                        <p className="votes">{card.votes} Votes</p>
+                                    </>
+                                ) : 
+                                (
                                     <div className="like">
-                                        <p className="icon" style={{ color: "#de334a" }}><FaStar /></p>
-                                        <p className="rating">{card.rating}/10</p>
+                                        <p className="icon" style={{ color: "#1ca63c"}}><AiFillLike /></p>
+                                        <p className="votes">{card.votes} Likes</p>
                                     </div>
-                                    <p className="votes">{card.votes} Votes</p>
-                                </>
-                            ) : 
-                            (
-                                <div className="like">
-                                    <p className="icon" style={{ color: "#1ca63c"}}><AiFillLike /></p>
-                                    <p className="votes">{card.votes} Likes</p>
-                                </div>
-                            )}
+                                )}
+                            </div>
+                        </div>
+                        <div className="card-content">
+                            <h3>{card.title}</h3>
+                            <p class="detail">{card.genre}</p>
                         </div>
                     </div>
-                    <div className="card-content">
-                        <h3>{card.title}</h3>
-                        <p class="detail">{card.genre}</p>
-                    </div>
+                ))}
+            </div>
+            {loaded && instanceRef.current && (
+            <>
+                <div className={`card-arrow-left ${currentSlide === 0 ? "arrow--disabled" : ""}`}>
+                <SlArrowLeft
+                    className="arrow--left"
+                    onClick={(e) => {
+                    e.stopPropagation();
+                    instanceRef.current.moveToIdx(0);
+                    }}
+                />
                 </div>
-            ))}
+
+                <div className={`card-arrow-right ${currentSlide === cards.length - 5 ? "arrow--disabled" : ""}`}>
+                <SlArrowRight
+                    className="arrow--right"
+                    onClick={(e) => {
+                    e.stopPropagation();
+                    instanceRef.current.moveToIdx(cards.length - 5);
+                    }}
+                />
+                </div>
+            </>
+            )}
+        </AppContainer>
+    </div>
+    <AppContainer>
+        <div className="poster">
+            <img src={poster} alt="poster" />
         </div>
     </AppContainer>
+    </>
   )
 }

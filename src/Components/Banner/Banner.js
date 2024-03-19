@@ -74,7 +74,7 @@ export default () => {
           <>
             <div className="arrow-left">
               <SlArrowLeft
-                className={`arrow--left ${currentSlide === 0 ? "arrow--disabled" : ""}`}
+                className="arrow--left"
                 onClick={(e) => {
                   e.stopPropagation();
                   instanceRef.current.prev();
@@ -84,7 +84,7 @@ export default () => {
 
             <div className="arrow-right">
               <SlArrowRight
-                className={`arrow--right ${currentSlide === images.length - 1 ? "arrow--disabled" : ""}`}
+                className="arrow--right"
                 onClick={(e) => {
                   e.stopPropagation();
                   instanceRef.current.next();
