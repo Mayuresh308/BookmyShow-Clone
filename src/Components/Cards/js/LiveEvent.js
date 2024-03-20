@@ -30,8 +30,6 @@ function LiveEvent() {
         },
         slides: { perView: 5 },
         initial: 0,
-        dragStart: null,
-        dragEnd: null,
         slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel)
         },
