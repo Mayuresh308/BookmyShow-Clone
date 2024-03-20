@@ -57,24 +57,24 @@ function LiveEvent() {
             </div>
             {loaded && instanceRef.current && (
             <>
-                <div className={`card-arrow-left ${currentSlide === 0 ? "arrow--disabled" : ""}`}>
-                <SlArrowLeft
-                    className="arrow--left"
-                    onClick={(e) => {
+                <div 
+                className={`card-arrow-left ${currentSlide === 0 ? "arrow--disabled" : ""}`}
+                onClick={(e) => {
                     e.stopPropagation();
                     instanceRef.current.moveToIdx(0);
-                    }}
-                />
+                }}
+                >
+                    <SlArrowLeft className="arrow--left" />
                 </div>
 
-                <div className={`card-arrow-right ${currentSlide === cards.length - 5 ? "arrow--disabled" : ""}`}>
-                <SlArrowRight
-                    className="arrow--right"
-                    onClick={(e) => {
+                <div 
+                className={`card-arrow-right ${currentSlide === cards.length - 5 ? "arrow--disabled" : ""}`}
+                onClick={(e) => {
                     e.stopPropagation();
                     instanceRef.current.moveToIdx(cards.length - 5);
-                    }}
-                />
+                }}
+                >
+                    <SlArrowRight className="arrow--right" />
                 </div>
             </>
             )}
