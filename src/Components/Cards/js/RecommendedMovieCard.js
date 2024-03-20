@@ -1,24 +1,25 @@
 import React, { useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import "./RecommendedMovieCard.css"
-import AppContainer from "../AppContainer/AppContainer"
+import "../css/RecommendedMovieCard.css"
+import "../css/Common.css"
+import AppContainer from "../../AppContainer/AppContainer"
 import { FaStar } from "react-icons/fa";
 import { AiFillLike } from "react-icons/ai";
 import { SlArrowLeft , SlArrowRight } from "react-icons/sl";
 
-import poster from "./Image/Poster/poster.avif"
+import poster from "../Image/Poster/poster.avif"
 
-import card1 from "./Image/RecommendedMovie/card1.avif"
-import card2 from "./Image/RecommendedMovie/card2.avif"
-import card3 from "./Image/RecommendedMovie/card3.avif"
-import card4 from "./Image/RecommendedMovie/card4.avif"
-import card5 from "./Image/RecommendedMovie/card5.avif"
-import card6 from "./Image/RecommendedMovie/card6.avif"
-import card7 from "./Image/RecommendedMovie/card7.avif"
-import card8 from "./Image/RecommendedMovie/card8.avif"
-import card9 from "./Image/RecommendedMovie/card9.avif"
-import card10 from "./Image/RecommendedMovie/card10.avif"
+import card1 from "../Image/RecommendedMovie/card1.avif"
+import card2 from "../Image/RecommendedMovie/card2.avif"
+import card3 from "../Image/RecommendedMovie/card3.avif"
+import card4 from "../Image/RecommendedMovie/card4.avif"
+import card5 from "../Image/RecommendedMovie/card5.avif"
+import card6 from "../Image/RecommendedMovie/card6.avif"
+import card7 from "../Image/RecommendedMovie/card7.avif"
+import card8 from "../Image/RecommendedMovie/card8.avif"
+import card9 from "../Image/RecommendedMovie/card9.avif"
+import card10 from "../Image/RecommendedMovie/card10.avif"
 
 const cards = [
     {"image": card1, "type": "like", "rating": 9.4, "votes": "146.7K", "title": "Manjummel Boys", "genre": "Adventure/Drama/Thriller"},
