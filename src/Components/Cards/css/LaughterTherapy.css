@@ -78,3 +78,45 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .laughter-therapy .card {
+        height: 300px;
+    }
+
+    .laughter-therapy .card-body p,
+    .laughter-therapy .card-content p {
+        font-size: 14px;
+    }
+
+    .laughter-therapy .card-arrow-left,
+    .laughter-therapy .card-arrow-right {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .laughter-therapy .card {
+        height: 100px;
+        width: auto;
+    }
+
+    .laughter-therapy .card-body p,
+    .laughter-therapy .card-content p {
+        font-size: 12px;
+    }
+
+    .laughter-therapy .card-content h3 {
+        font-size: 16px;
+    }
+
+    .laughter-therapy .card-arrow-left,
+    .laughter-therapy .card-arrow-right {
+        width: 30px;
+        height: 30px;
+    }
+}

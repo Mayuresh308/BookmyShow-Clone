@@ -1,5 +1,30 @@
-.app-container{
+/* .app-container{
     width: 100%;
     max-width: 1240px;
     margin: auto;
+} */
+
+
+
+
+
+/* styles.css */
+.app-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        padding: 0 10px; /* Further adjust padding for very small screens */
+    }
 }

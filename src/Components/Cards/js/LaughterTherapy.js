@@ -17,18 +17,21 @@ import card8 from "../Image/LaughterTherapy/card8.avif"
 import card9 from "../Image/LaughterTherapy/card9.avif"
 import card10 from "../Image/LaughterTherapy/card10.avif"
 
+
+
 const cards = [
-    {"image": card1, "date": "Sun, 14 Apr", "title": "Death by Laughter ft. Vivek Muralidharan", "location": "Fika: Chennai"},
-    {"image": card2, "date": "Sate, 6 Apr", "title": "SO mini THINGS! - Aiyyo Shraddha World Tour 2024", "location": "Sir Mutha Venkatasubba Rao Concert Hall: Chennai"},
-    {"image": card3, "date": "Sun, 31 Mar", "title": "Moving On - Mervyn Rozz Live -Tamil Standup", "location": "Medai - The Stage, Alwarpet: Chennai"},
-    {"image": card4, "date": "Sun, 7 Apr", "title": "JOKES FOR REELS - A TAMIL STANDUP COMEDY SHOW", "location": "Offbeat Music Ventures: Chennai"},
-    {"image": card5, "date": "Sat, 6 Apr", "title": "KD Live Tester Show", "location": "Fika: Chennai"},
-    {"image": card6, "date": "Sat, 30 Mar onwards", "title": "MADRAS COMEDY SHOW", "location": "Fika: Chennai"},
-    {"image": card7, "date": "Sat, 13 Jul", "title": "JAGANE THANDHIRAM - A TAMIL STANDUP SHOW", "location": "Music Academy: Chennai"},
-    {"image": card8, "date": "Mon, 1 Apr onwards", "title": "Ara-Gora Comedy Open Mic Nights", "location": "BurgerMan Nungambakkam: Chennai"},
-    {"image": card9, "date": "Sat, 1 Feb", "title": "Abhishek Upmanyu LIVE 2025 - Chennai", "location": "Sir Mutha Venkatasubba Rao Concert Hall: Chennai"},
-    {"image": card10, "date": "Sun, 14 Apr", "title": "Twinsanity", "location": "Fika: Chennai"},
-]
+  {"image": card1, "date": "Sat, 9 Nov", "title": "Broken by Sahil Shah LIVE TAPING", "location": "Veda Kunba Theatre: Mumbai"},
+  {"image": card2, "date": "Fri, 8 Nov", "title": "Smooth Kullu Smooth by Aaditya Kulshreshtha", "location": "Bal Gandharva Rang Mandir: Bandra"},
+  {"image": card3, "date": "Wed, 6 Nov onwards", "title": "All Star Standup Comedy", "location": "The Habitat: Mumbai"},
+  {"image": card4, "date": "Fri, 8 Nov onwards", "title": "The Internet Said So - LIVE", "location": "Below The Habitat: Mumbai"},
+  {"image": card5, "date": "Wed, 6 Nov onwards", "title": "SoBo Comedy Nights", "location": "Broadway Blues: Lower Parel, Mumbai"},
+  {"image": card6, "date": "Sun, 29 Dec", "title": "Kunal Kamra Live", "location": "Lata Mangeshkar NatyaGruha Auditorium: Mumbai"},
+  {"image": card7, "date": "Sun, 24 Nov", "title": "Gaurav Gupta Live - India Tour", "location": "Sophia Bhabha Auditorium: Mumbai"},
+  {"image": card8, "date": "Mon, 11 Nov onwards", "title": "Zakir Khan Live", "location": "Bal Gandharva Rang Mandir: Bandra"},
+  {"image": card9, "date": "Sat, 16 Nov onwards", "title": "Harsh Gujral Live in Mumbai", "location": "Courtyard, R City Mall: Ghatkopar"},
+  {"image": card10, "date": "Wed, 6 Nov onwards", "title": "Tonight in Juhu - A Standup Comedy Show", "location": "The J Spot, Juhu: Mumbai"}
+];
+
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

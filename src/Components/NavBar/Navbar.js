@@ -22,7 +22,7 @@ function Navbar() {
         </div>
         <div className="navbar-right">
           <a href="#" className="location">
-            Kollam
+            Solapur 
           </a>
           <SlArrowDown className="location-down"/>
           <button className="signin">Sign in</button>

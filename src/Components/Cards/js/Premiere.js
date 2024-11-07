@@ -18,15 +18,15 @@ import card7 from "../Image/Premiere/card7.avif"
 import card8 from "../Image/Premiere/card8.avif"
 
 const cards = [
-    {"image": card1, "premiere": "true", "title": "Hushhh", "language": "Hindi"},
-    {"image": card2, "premiere": "true", "title": "Chupkotha", "language": "Bengali"},
-    {"image": card3, "premiere": "true", "title": "Infinity", "language": "Tamil"},
-    {"image": card4, "premiere": "true", "title": "Freud`s Last Session", "language": "English"},
-    {"image": card5, "premiere": "true", "title": "The Kingdom Exodus: Season 3", "language": "Danish"},
-    {"image": card6, "premiere": "true", "title": "Muzzle", "language": "English"},
-    {"image": card7, "premiere": "true", "title": "Dinosaurs", "language": "Tamil"},
-    {"image": card8, "premiere": "false", "title": "The Legend of Muay Thai: 9 Satra", "language": "Thai"},
-]
+  {"image": card1, "premiere": "true", "title": "The Defenders", "language": "English"},
+  {"image": card2, "premiere": "true", "title": "Yolo", "language": "Mandarin"},
+  {"image": card3, "premiere": "true", "title": "The Line", "language": "English"},
+  {"image": card4, "premiere": "true", "title": "Transformers One", "language": "English"},
+  {"image": card5, "premiere": "true", "title": "Speak No Evil", "language": "English"},
+  {"image": card6, "premiere": "true", "title": "The Exorcism", "language": "English"},
+  {"image": card7, "premiere": "true", "title": "Ab Toh Sab Bhagwan Bharose", "language": "Hindi"},
+  {"image": card8, "premiere": "false", "title": "Strange Darling", "language": "English"}
+];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

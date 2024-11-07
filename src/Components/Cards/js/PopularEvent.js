@@ -18,17 +18,17 @@ import card9 from "../Image/PopularEvent/card9.avif"
 import card10 from "../Image/PopularEvent/card10.avif"
 
 const cards = [
-    {"image": card1, "date": "Tue, 26 Mar onwards", "title": "Play Station Center", "location": "North Town Tower 24: Chennai"},
-    {"image": card2, "date": "Tue, 26 Mar onwards", "title": "Hamleys Play - Chennai", "location": "Phoenix Marketcity: Chennai"},
-    {"image": card3, "date": "Thu, 28 Mar", "title": "Stand Up Comedy Open Mic", "location": "Fika: Chennai"},
-    {"image": card4, "date": "Tue, 26 Mar onwards", "title": "PLAY 'N' LEARN VR Mall Chennai", "location": "Play N Learn, VR Mall: Chennai"},
-    {"image": card5, "date": "Sat, 30 Mar", "title": "Easter Bash at PLAY 'N' LEARN", "location": "Play N Learn, VR Mall: Chennai"},
-    {"image": card6, "date": "Sun, 31 Mar", "title": "SCC Open Air Cinema - Vinnaithaandi Varuvaaya", "location": "One Paramount: Chennai"},
-    {"image": card7, "date": "Sat, 30 Mar", "title": "SCC Open Air Cinema - About Time", "location": "One Paramount: Chennai"},
-    {"image": card8, "date": "Sat, 4 May", "title": "Gautham Govindan LIVE", "location": "Offbeat Music Ventures: Chennai"},
-    {"image": card9, "date": "Sat, 6 Apr onwards", "title": "Navin Kumar Live : English Standup Solo", "location": "Offbeat Music Ventures: Chennai"},
-    {"image": card10, "date": "Sun, 31 Mar", "title": "African Drumming & Dance Workshop", "location": "IDAM - The Art & Cultural Space: Chennai"},
-]
+  {"image": card1, "date": "Fri, 8 Nov onwards", "title": "International Clown Festival - India - Mumbai", "location": "St. Andrews Auditorium: Mumbai"},
+  {"image": card2, "date": "Sat, 16 Nov", "title": "Gajendra Verma: Good Vibes Only Tour", "location": "Courtyard, R City Mall: Ghatkopar"},
+  {"image": card3, "date": "Sun, 8 Dec", "title": "Kailash Kher Live", "location": "Inorbit Mall: Malad"},
+  {"image": card4, "date": "Wed, 6 Nov onwards", "title": "Infinity Mirrored Room", "location": "Infinity Room, Nita Mukesh Ambani Cultural Centre"},
+  {"image": card5, "date": "Thu, 7 Nov onwards", "title": "Tickets: Museum of Solutions", "location": "Museum of Solutions: Mumbai"},
+  {"image": card6, "date": "Thu, 7 Nov", "title": "Main Floor Viewing Pass Day 2", "location": "Famous Studio: Mumbai"},
+  {"image": card7, "date": "Sat, 16 Nov onwards", "title": "First Move by Abishek and Nirmal", "location": "Above The Habitat: Mumbai"},
+  {"image": card8, "date": "Tue, 24 Dec", "title": "Sau Saal Pehle - Sonu Nigam Tribute to...", "location": "Grand Theatre, Nita Mukesh Ambani Cultural Centre"},
+  {"image": card9, "date": "Thu, 7 Nov onwards", "title": "Wildlife Photographer of the Year", "location": "Art House, Nita Mukesh Ambani Cultural Centre"},
+  {"image": card10, "date": "Sat, 21 Dec", "title": "Piyush Mishra - UdanKhatola Tour - Thane", "location": "TMC Ground: Thane"}
+];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

@@ -15,14 +15,14 @@ import card6 from "../Image/LatestPlay/card6.avif"
 import card7 from "../Image/LatestPlay/card7.avif"
 
 const cards = [
-    {"image": card1, "date": "Sat, 30 Mar", "title": "Oor koodi ther izhu"},
-    {"image": card2, "date": "Sun, 31 Mar", "title": "Kathula Poo", "language": "Tamil"},
-    {"image": card3, "date": "Sun, 7 Apr", "title": "Vintage Classic of UAA", "language": "Tamil"},
-    {"image": card4, "date": "Sat, 30 Mar", "title": "Oor koodi ther izhu", "language": "Tamil"},
-    {"image": card5, "date": "Sat, 6 Apr", "title": "Sound Healing from Auroville"},
-    {"image": card6, "date": "Mon, 1 Apr onwards", "title": "Casagrand SunDance", "language": "English"},
-    {"image": card7, "date": "Sat, 30 Mar", "title": "Stories at Sunset  - Storytime for Adults", "language": "English"}
-]
+  {"image": card1, "date": "Thu, 5 Dec onwards", "title": "Life of Pie", "language":"English"},
+  {"image": card2, "date": "Sun, 10 Nov onwards", "title": "Varvarche vadhu var", "language": "Marathi"},
+  {"image": card3, "date": "Thu, 7 Nov onwards", "title": "Albattya Galbattya", "language": "Marathi"},
+  {"image": card4, "date": "Sat, 9 Nov onwards", "title": "Marathi Bana", "language": "Marathi"},
+  {"image": card5, "date": "Sat, 9 Nov onwards", "title": "Peppa Pig's Adventure", "language":"English"},
+  {"image": card6, "date": "Sun, 10 Nov onwards", "title": "Aajibai Jorat", "language": "Marathi"},
+  {"image": card7, "date": "Sat, 14 Nov onwards", "title": "Murderwale Kulkarni", "language": "Marathi"}
+];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

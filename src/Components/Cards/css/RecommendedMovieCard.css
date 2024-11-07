@@ -89,3 +89,42 @@
     height: 103px;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .recommended-movie .card {
+        height: 300px;
+    }
+
+    .recommended-movie .card-body p,
+    .recommended-movie .card-content p {
+        font-size: 14px;
+    }
+
+    .recommended-movie .card-arrow-left,
+    .recommended-movie .card-arrow-right {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recommended-movie .card {
+        height: 100px;
+        width: auto;
+    }
+
+    .recommended-movie .card-body p,
+    .recommended-movie .card-content p {
+        font-size: 12px;
+    }
+
+    .recommended-movie .card-content h3 {
+        font-size: 16px;
+    }
+
+    .recommended-movie .card-arrow-left,
+    .recommended-movie .card-arrow-right {
+        width: 30px;
+        height: 30px;
+    }
+}

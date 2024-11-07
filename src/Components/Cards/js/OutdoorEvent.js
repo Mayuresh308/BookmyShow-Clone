@@ -18,17 +18,18 @@ import card9 from "../Image/OutdoorEvent/card9.avif"
 import card10 from "../Image/OutdoorEvent/card10.avif"
 
 const cards = [
-    {"image": card1, "date": "Sat, 30 Mar", "title": "Lucknow Super Giants vs Punjab Kings", "location": "BRSABV Ekana Cricket Stadium: Lucknow"},
-    {"image": card2, "date": "Mon, 1 Apr", "title": "Mumbai Indians VS Rajasthan Royals", "location": "Wankhede Stadium: Mumbai"},
-    {"image": card3, "date": "Thu, 4 Apr", "title": "Chennaiyin FC vs Jamshedpur FC", "location": "Jawaharlal Nehru Stadium: Chennai"},
-    {"image": card4, "date": "Sun, 7 Apr", "title": "Lucknow Super Giants vs Gujarat Titans", "location": "BRSABV Ekana Cricket Stadium: Lucknow"},
-    {"image": card5, "date": "Thu, 26 Mar onwards", "title": "PLAY 'N' LEARN VR Mall Chennai", "location": "Play N Learn, VR Mall: Chennai"},
-    {"image": card6, "date": "Thu, 26 Mar onwards", "title": "Snow Kingdom Chennai", "location": "VGP Universal Kingdom: Chennai"},
-    {"image": card7, "date": "Thu, 26 Mar", "title": "India vs Afghanistan - FIFA World Cup Qualifier 2026", "location": "Indira Gandhi Athletic Stadium: Guwahati"},
-    {"image": card8, "date": "Mon, 8 Apr", "title": "Mumbai City FC vs Odisha FC", "location": "Mumbai Football Arena: Andheri West"},
-    {"image": card9, "date": "Sat, 30 Mar onwards", "title": "Hamleys Easter Hunt", "location": "Phoenix Marketcity: Chennai"},
-    {"image": card10, "date": "Thu, 26 Mar onwards", "title": "Sky Jumper Trampoline Park - Chennai", "location": "SkyJumper Trampoline Park: Chennai"},
-]
+  {"image": card1, "date": "Wed, 6 Nov onwards", "title": "Paradox Museum", "location": "Paradox Museum: Mumbai"},
+  {"image": card2, "date": "Wed, 6 Nov onwards", "title": "Rambo Circus - Borivali", "location": "Gen. Arunkumar Vaidya Ground: Mumbai"},
+  {"image": card3, "date": "Sun, 10 Nov onwards", "title": "Vastraharan", "location": "Dinanath Mangeshkar Natyagruha: Vile Parle"},
+  {"image": card4, "date": "Sun, 10 Nov", "title": "WE PLAY CRICKET", "location": "Five Nine Turf: Mumbai"},
+  {"image": card5, "date": "Tue, 3 Dec", "title": "Bulls vs Giants & UMumba vs Puneri Paltan", "location": "Shiv Chatrapati Sports Complex: Balewadi"},
+  {"image": card6, "date": "Thu, 9 Jan onwards", "title": "Mughal-E-Azam", "location": "Grand Theatre, Nita Mukesh Ambani Cultural Centre"},
+  {"image": card7, "date": "Sun, 8 Dec onwards", "title": "Jar Tar Chi Goshta", "location": "Dinanath Mangeshkar Natyagruha: Vile Parle"},
+  {"image": card8, "date": "Wed, 13 Nov onwards", "title": "Zakir Khan Live - Special Taping", "location": "Bal Gandharva Rang Mandir: Mumbai"},
+  {"image": card9, "date": "Thu, 7 Nov onwards", "title": "Imagicaa Theme Park", "location": "Imagica Theme Park (Khopoli): Mumbai"},
+  {"image": card10, "date": "Wed, 6 Nov onwards", "title": "Fountain of Joy - Dhirubhai Ambani Square", "location": "Dhirubhai Ambani Square: Mumbai"}
+];
+
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

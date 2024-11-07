@@ -22,17 +22,17 @@ import card9 from "../Image/RecommendedMovie/card9.avif"
 import card10 from "../Image/RecommendedMovie/card10.avif"
 
 const cards = [
-    {"image": card1, "type": "like", "rating": 9.4, "votes": "146.7K", "title": "Manjummel Boys", "genre": "Adventure/Drama/Thriller"},
-    {"image": card2, "type": "like", "rating": 8.6, "votes": "10K", "title": "Kung Fu Panda 4", "genre": "Action/Adventure/Animation/Comedy"},
-    {"image": card3, "type": "interest", "rating": 0, "votes": "126.7K", "title": "Godzilla x Kong: The New Empire", "genre": "Action/Sci-Fi/Thriller"},
-    {"image": card4, "type": "like", "rating": 8, "votes": "80.7K", "title": "Shaitaan", "genre": "Supernatural/Thriller"},
-    {"image": card5, "type": "like", "rating": 9.2, "votes": "96.3K", "title": "Premalu", "genre": "Comedy/Romantic"},
-    {"image": card6, "type": "like", "rating": 9.1, "votes": "32K", "title": "Dune: Part Two", "genre": "Action/Adventure/Drama/Sci-Fi"},
-    {"image": card7, "type": "like", "rating": 8.1, "votes": "10.4K", "title": "Lover", "genre": "Drama/Romantic"},
-    {"image": card8, "type": "like", "rating": 8.2, "votes": "14.7K", "title": "Yodha", "genre": "Action/Thriller"},
-    {"image": card9, "type": "like", "rating": 9.3, "votes": "112.8K", "title": "Article 370", "genre": "Drama/Political"},
-    {"image": card10, "type": "like", "rating": 8.4, "votes": "1.2K", "title": "J Baby", "genre": "Drama/Family"},
-]
+    {"image": card1, "type": "like", "rating": 6.8, "votes": "110K", "title": "Singham Again", "genre": "Action/Drama"},
+    {"image": card2, "type": "like", "rating": 6.1, "votes": "125.3K", "title": "Bhool Bhulaiyaa 3", "genre": "Comedy/Horror"},
+    {"image": card3, "type": "interest", "rating": 8.0, "votes": "58.7K", "title": "Venom: The Last Dance", "genre": "Action/Adventure/Sci-Fi"},
+    {"image": card4, "type": "like", "rating": 9.4, "votes": "115.6K", "title": "Amaran", "genre": "Action/Drama/Thriller"},
+    {"image": card5, "type": "like", "rating": 9.4, "votes": "11.4K", "title": "The Wild Robot", "genre": "Adventure/Animation/Family"},
+    {"image": card6, "type": "like", "rating": 9.4, "votes": "47.1K", "title": "Lucky Baskhar", "genre": "Crime/Drama/Thriller"},
+    {"image": card7, "type": "like", "rating": 8.8, "votes": "8.3K", "title": "Phullwanti", "genre": "Drama/Period/Romantic"},
+    {"image": card8, "type": "like", "rating": 7.0, "votes": "6.2K Likes", "title": "I am Kathalan", "genre": "Drama/Thriller"},
+    {"image": card9, "type": "like", "rating": 8.0, "votes": "13.6K Likes", "title": "Kale Lagan Chhe !?!", "genre": "Comedy/Family/Romantic"},
+    {"image": card10, "type": "like", "rating": 7.0, "votes": "9.7K", "title": "Brother", "genre": "Comedy/Drama/Family"}
+];
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

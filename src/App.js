@@ -10,6 +10,7 @@ import LaughterTherapy from './Components/Cards/js/LaughterTherapy';
 import PopularEvent from './Components/Cards/js/PopularEvent';
 import LatestPlay from './Components/Cards/js/LatestPlay';
 import TopGame from './Components/Cards/js/TopGame';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <PopularEvent />
       <LatestPlay />
       <TopGame />
+      <Footer/>
     </div>
   );
 }

@@ -119,3 +119,45 @@
 .premiere .card-arrow-left, .premiere .card-arrow-right {
     top: 57%;
   }
+
+
+
+
+  @media (max-width: 768px) {
+    .premiere .card {
+        height: 300px;
+    }
+
+    .premiere .card-body p,
+    .premiere .card-content p {
+        font-size: 14px;
+    }
+
+    .premiere .card-arrow-left,
+    .premiere .card-arrow-right {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .premiere .card {
+        height: 100px;
+        width: auto;
+    }
+
+    .premiere .card-body p,
+    .premiere .card-content p {
+        font-size: 12px;
+    }
+
+    .premiere .card-content h3 {
+        font-size: 16px;
+    }
+
+    .premiere .card-arrow-left,
+    .premiere .card-arrow-right {
+        width: 30px;
+        height: 30px;
+    }
+}

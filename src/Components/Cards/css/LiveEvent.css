@@ -21,3 +21,43 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+
+
+@media (max-width: 768px) {
+    .live-event .card {
+        height: 300px;
+    }
+
+    .live-event .card-body p,
+    .live-event .card-content p {
+        font-size: 14px;
+    }
+
+    .live-event .card-arrow-left,
+    .live-event .card-arrow-right {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .live-event .card {
+        height: 100px;
+        width: auto;
+    }
+
+    .live-event .card-body p,
+    .live-event .card-content p {
+        font-size: 12px;
+    }
+
+    .live-event .card-content h3 {
+        font-size: 16px;
+    }
+
+    .live-event .card-arrow-left,
+    .live-event .card-arrow-right {
+        width: 30px;
+        height: 30px;
+    }
+}

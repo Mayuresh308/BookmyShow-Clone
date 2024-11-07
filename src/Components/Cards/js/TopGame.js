@@ -18,17 +18,18 @@ import card9 from "../Image/TopGame/card9.avif"
 import card10 from "../Image/TopGame/card10.avif"
 
 const cards = [
-    {"image": card1, "date": "Thu, 28 Mar", "title": "Rajasthan Royals vs Delhi Capitals", "location": "Sawai Mansingh Stadium: Jaipur"},
-    {"image": card2, "date": "Thu, 4 Apr", "title": "Chennaiyin FC vs Jamshedpur FC", "location": "Jawaharlal Nehru Stadium: Chennai"},
-    {"image": card3, "date": "Sun, 28 Apr", "title": "Marathon On World Health Day", "location": "Olcott Memorial High School: Chennai"},
-    {"image": card4, "date": "Sun, 6 Oct", "title": "The Great Inflate Run - Chennai", "location": "Venue To Be Announced: Chennai"},
-    {"image": card5, "date": "Thu, 26 Mar", "title": "India vs Afghanistan - FIFA World Cup Qualifier 2026", "location": "Indira Gandhi Athletic Stadium: Guwahati"},
-    {"image": card6, "date": "Thu, 9 Apr", "title": "Chennaiyin FC vs NorthEast United FC", "location": "Jawaharlal Nehru Stadium: Chennai"},
-    {"image": card7, "date": "Sun, 7 Apr", "title": "Lucknow Super Giants vs Gujarat Titans", "location": "BRSABV Ekana Cricket Stadium: Lucknow"},
-    {"image": card8, "date": "Mon, 1 Apr", "title": "Mumbai Indians VS Rajasthan Royals", "location": "Wankhede Stadium: Mumbai"},
-    {"image": card9, "date": "Mon, 1 Jul", "title": "21 Days Walking Challenge by Malsar.in", "location": "Your Place and Your Time"},
-    {"image": card10, "date": "Sun, 14 Apr", "title": "Run for Equality - Get Medal by Courier", "location": "Your Place and Your Time"},
-]
+  {"image": card1, "date": "Tue, 3 Dec onwards", "title": "Pro Kabaddi League", "location": "Season 11 - Pune, Multiple Venues"},
+  {"image": card2, "date": "Tue, 26 Nov onwards", "title": "MUMBAI CITY FC - ISL", "location": "2024/25, Multiple Venues"},
+  {"image": card3, "date": "Sun, 24 Nov", "title": "Bandra Half Marathon", "location": "Bandra Fort Garden: Mumbai"},
+  {"image": card4, "date": "Sat, 7 Dec", "title": "Yoddhas vs Puneri Paltan & Titans vs Warriorz", "location": "Shiv Chatrapati Sports Complex: Balewadi"},
+  {"image": card5, "date": "Fri, 8 Nov onwards", "title": "Mumbai Midnight Cycling", "location": "Paragon Centre: Mumbai"},
+  {"image": card6, "date": "Sun, 24 Nov", "title": "Mumbai Green Marathon - Bandra West", "location": "Bandra Fort Garden: Mumbai"},
+  {"image": card7, "date": "Sun, 22 Dec", "title": "Aamchi Mumbai Marathon", "location": "Bandra Fort Garden: Mumbai"},
+  {"image": card8, "date": "Wed, 4 Dec", "title": "Titans vs Yoddhas & Steelers vs Warriorz", "location": "Shiv Chatrapati Sports Complex: Balewadi"},
+  {"image": card9, "date": "Sun, 2 Feb", "title": "Mumbai Half Marathon", "location": "Bandra Fort Garden: Mumbai"},
+  {"image": card10, "date": "Thu, 5 Dec", "title": "Dabang Delhi vs Yoddhas & Pink Panthers vs UMumba", "location": "Shiv Chatrapati Sports Complex: Balewadi"}
+];
+
 
 export default () => {
   const [currentSlide, setCurrentSlide] = useState(0)

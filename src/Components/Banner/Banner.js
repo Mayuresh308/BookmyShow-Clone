@@ -4,11 +4,11 @@ import "keen-slider/keen-slider.min.css";
 import { SlArrowLeft , SlArrowRight } from "react-icons/sl";
 
 import "./Banner.css";
-import banner1 from "./Image/banner1.avif";
-import banner2 from "./Image/banner2.avif";
-import banner3 from "./Image/banner3.avif";
-import banner4 from "./Image/banner4.avif";
-import banner5 from "./Image/banner5.avif";
+import banner1 from "./Image/banner1.png";
+import banner2 from "./Image/banner2.png";
+import banner3 from "./Image/banner3.png";
+import banner4 from "./Image/banner4.png";
+import banner5 from "./Image/banner5.png";
 
 const images = [banner1, banner2, banner3, banner4, banner5];
 
